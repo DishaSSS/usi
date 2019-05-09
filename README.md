@@ -1,6 +1,7 @@
 # University Social Interface
-  ## Step 1: 
-    git clone https://github.com/caffeinaholics/usi.git usi
+  ## Step 1:
+    First create a fork of this repository
+    git clone https://github.com/YOUR-USERNAME/usi.git usi
 
   ## Step 2:
     create a virtual env 
