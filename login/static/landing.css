@@ -1,0 +1,47 @@
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: static;
+
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-webkit-background-attachment: fixed;
+	font-family: sans-serif;
+	font-weight: 100;
+	color: white;
+	background: url("site/evening-1.jpg");
+
+
+}
+.wrapper{
+	text-align: center;
+}
+
+
+p{
+
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+.fluid{
+	font-size: 17vw;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.next{
+	padding-top: 0px;
+	font-size: 5vw;
+	margin-top: 0px;
+}
+.container{
+	margin: auto;
+}
+div.container > *{
+	margin: auto;
+}

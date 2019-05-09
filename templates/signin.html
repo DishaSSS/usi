@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name='theme-color' content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static "signin.css" %}">
+    <script type="text/javascript">
+      var check = '{{  incorrect  }}';
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="{% static "signin.js" %}">
+
+    </script>
+  </head>
+  <body>
+
+    <div class="">
+
+    <div class="title">
+
+  	<h1>Welcome</h1>
+  	<p>Sign In!</p>
+  	</div>
+  	<div></div>
+<div class="container" align="center">
+<img src="{% static "avatar1.png" %}" class="avatar">
+<form class=""  method="post">
+  {% csrf_token %}
+  <div>
+    {{ form.username }}
+    <div id = "check" hidden>
+      <p>Incorrect password or username</p>
+    </div>
+  </div>
+<div>
+      {{ form.password }}
+</div>
+    <input type="submit" name="submit" value="Submit" >
+</form>
+<p style="color:white;font-size:150%;">
+
+  OR
+</p>
+<input type="button" name="register" value="Register"  >
+</div>
+</div>
+
+  </body>
+</html>

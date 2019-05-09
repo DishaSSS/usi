@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='theme-color' content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title></title>
+<link rel="stylesheet" href="/static/attend.css?{% now "U" %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="{% static "attend.js" %}">
+
+	</script>
+
+
+
+</head>
+<body>
+	<div class="title">
+	<h1>Welcome</h1>
+	<p>Please use your erp credentials</p>
+	</div>
+	<div></div>
+	<div class="container" align="center">
+
+<form  method="post">
+    {% csrf_token %}
+<div>
+    {{ form.username }}<p id="matchusername"></p>
+</div>
+<div>
+		{{ form.password }}
+</div>
+<div>
+		{{ form.password_conf }}
+		<p id="matchpass"></p>
+</div>
+<div>
+		{{ form.regid }}
+</div>
+<div>
+		{{ form.passw }}
+</div>
+<div>
+		<input  id='verifyerp' type="button" value="Verify erp" required >
+</div>
+<div>
+		{{ form.mood_reg }}
+</div>
+<div>
+		{{ form.mood_passw }}
+</div>
+<div>
+		<input id='verifymood' type="button" value="Verify moodle" required>
+</div>
+<div>
+	  <input id ="submit" type="submit" value="Submit" disabled>
+</div>
+</form>
+</div>
+
+</body>
+</html>

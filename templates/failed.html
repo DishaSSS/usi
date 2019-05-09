@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	p{
+		align-content: center;
+		color: white;
+		
+	}
+	.title{
+		font-size: 25vh;
+	}
+	.mainline{
+		font-size: 10vh;
+	}
+	body{
+		background-color: lightblue;
+	}
+</style>
+<head>
+	<title>Connection refused</title>
+</head>
+<body>
+	<p class="title">OOPS</p>
+	{% if result == "Wifi slow" %}
+	<p class="mainline">The wifi's running slow (sigh) you can try again in sometime!</p>
+	{% endif %}
+	{% if result == "Wrong Credentials" %}
+	<p class="mainline"> Wrong Password, bro!</p>
+	{% elif result == "Moodle Failed" %}
+	<p class="mainline"> Wrong Password for moodle, bro!</p>
+
+	{% endif %}
+
+</body>
+</html>

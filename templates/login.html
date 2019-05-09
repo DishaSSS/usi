@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='theme-color' content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>body{
+		background-image: url('/static/site/{{ location }}');
+
+	}</style>
+
+	<link rel="stylesheet" type="text/css" href="/static/login.css?{% now "U" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">var	regid = '{{ request.session.regid }}';
+var	passw ='{{ request.session.passw }}';
+var mood_reg= '{{ request.session.mood_reg }}';
+var mood_passw = "{{ request.session.mood_passw }}"</script>
+<script type="text/javascript" src="{% static "login.js" %}">
+
+</script>
+
+	<title>Hi</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body >
+
+
+	<div class="cent" align="center">
+	<h2 class="greet"></h2>
+</div>
+<div id="container" class="cent">
+
+			<div id="attend" class="cssload-container" hidden="">	<div class="cssload-shaft1"></div>	<div class="cssload-shaft2"></div>	<div class="cssload-shaft3"></div>	<div class="cssload-shaft4"></div>	<div class="cssload-shaft5"></div>	<div class="cssload-shaft6"></div>	<div class="cssload-shaft7"></div>	<div class="cssload-shaft8"></div><div class="cssload-shaft9"></div><div class="cssload-shaft10"></div></div>
+
+		</div>
+<h3>
+</h3>
+		<div id="mood-load" class="cssload-container" hidden="">	<div class="cssload-shaft1"></div>	<div class="cssload-shaft2"></div>	<div class="cssload-shaft3"></div>	<div class="cssload-shaft4"></div>	<div class="cssload-shaft5"></div>	<div class="cssload-shaft6"></div>	<div class="cssload-shaft7"></div>	<div class="cssload-shaft8"></div><div class="cssload-shaft9"></div><div class="cssload-shaft10"></div></div>
+<div>
+
+		<div id="event"></div>
+
+
+
+<h3>
+</h3>
+<div id="month"></div>
+
+</div>
+
+</body>
+</html>

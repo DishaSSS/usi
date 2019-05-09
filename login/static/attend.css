@@ -1,0 +1,112 @@
+.container{
+  margin-top: 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: auto;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin: 0;
+  background: url("site/evening-1.jpg");
+  -webkit-background-attachment: fixed;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: sans-serif;
+font-weight: 100;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+text-align: center;
+font-weight: bold;
+
+color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+text-align: center;
+font-weight: bold;
+color: white;
+}
+
+:-ms-input-placeholder {
+text-align: center;
+font-weight: bold;
+color: white;
+
+}
+
+div{
+margin-top: 1.5%;
+margin-bottom: 1.5%;
+}
+input{
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffff;
+  margin-top: 40px;
+  border-radius: 0%;
+  color: white;
+
+
+}
+input[type$="submit"]{
+  width: 100%;
+}
+input[type$="submit"], #verifymood, #verifyerp{
+  border: solid 1px white;
+  height: 40px;
+  margin-top:0;
+  font-weight: 800;
+  width: 50%;
+
+}
+input[type$="submit"]:hover,input[type$="button"]:hover{
+  color : black;
+  background-color : white;
+}
+#verifyerp , #verifymood{
+  margin-top: 0px;
+}
+.title{
+  color: rgb(245,235,245);
+text-align:  center;
+}
+@media screen and (max-width: 900px){
+  input{
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    margin-top: 30px;
+    border-radius: 0%;
+    color: white;
+}
+input[type$="submit"]{
+  width: 30%;
+  background-color: black;
+}
+.title{
+  color: rgb(245,235,245);
+text-align:  center;
+}
+body,html{
+  height: 100%;
+}
+}
