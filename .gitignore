@@ -7,6 +7,6 @@
 *.pyc
 __pycache__/
 local_settings.py
-
+login/data/*
 .env
 db.sqlite3
